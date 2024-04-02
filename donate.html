@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Rochester Affordable Housing Authority</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="images\housingIcon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Montserrat&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Space+Mono&display=swap"
+    rel="stylesheet">
+
+  <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. -->
+</head>
+
+<body>
+
+  <header>
+    <div class="headerInfo">
+
+
+      <div id="logoAndTitle">
+        <a href="index.html">
+          <img src="images/housingLogoFixed.png" alt="Rochester Housing Authority Logo" id="headerLogo">
+        </a>
+
+        <div id="titleDiv">
+          <p><strong>Rochester</strong></p>
+          <p><strong>Affordable</strong></p>
+          <p><strong>Housing Inc.</strong></p>
+          <p><strong>501(C)3</strong></p>
+        </div>
+      </div>
+
+      <div class="donateBox">
+        <a href="donate.html" class="donateButton">Donate</a>
+
+        <div class="contactInfo">
+          <p>565 Rounseville Road - Unit 10, MA 02770</p>
+          <p>Phone: 555-555-5555</p>
+          <p>RochesterAffordableHousingInc@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+    <nav>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">About Us<img src="images/dropDownArrow.png" alt="Drop Down Arrow"
+            class="dropDownArrow"></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="aboutUs.html">Board of Directors</a>
+          <a href="ourMission.html">Our Mission</a>
+          <a href="contactUs.html">Contact Us</a>
+  </div>
+      </div>
+
+      <div class="dropdown">
+        <button onclick="myFunction1()" class="dropbtn">Housing<img src="images/dropDownArrow.png" alt="Drop Down Arrow"
+            class="dropDownArrow"></button>
+        <div id="myDropdown1" class="dropdown-content">
+          <a href="floorplans.html">Floorplans</a>
+          <a href="#"></a>
+          <a href="#"></a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button onclick="myFunction2()" class="dropbtn">Get Involved<img src="images/dropDownArrow.png"
+            alt="Drop Down Arrow" class="dropDownArrow"></button>
+        <div id="myDropdown2" class="dropdown-content">
+          <a href="#">Volunteer</a>
+          <a href="#">Donate</a>
+          <a href="#">Dontate Property</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button onclick="myFunction3()" class="dropbtn">FAQ<img src="images/dropDownArrow.png"
+            alt="Drop Down Arrow" class="dropDownArrow"></button>
+        <div id="myDropdown3" class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+
+  <main class = "donateMain">
+    <div class = "fff">
+    <h3>Donate</h3>
+    <p>Donate to the Rochester Affordable Housing Authority so we can help the people in our community that need it.
+    </p>
+
+
+    <div class="donateAmounts">
+      <div>
+        <div onclick="changeColor(this)">
+          <a href = "#" >$10</a>
+        </div>
+        <div onclick="changeColor(this)">
+          <a href = "#" >$25</a>
+        </div>
+      </div>
+
+      <div>
+        <div onclick="changeColor(this)">
+          <a href = "#" >$100</a>
+        </div>
+        <div onclick="changeColor(this)">
+          <a  href = "#" >$250</a>
+        </div>
+      </div>
+
+      <div>
+        <div onclick="changeColor(this)">
+          <a href = "#" >$1000</a>
+        </div>
+        <div onclick="changeColor(this)">
+          <a href = "#" >$2500</a>
+        </div>
+      </div>
+
+      <form action="donateInfo.html">
+        <label for="fname">Custom Amount<br></label>
+        <input type="text" id="fname" name="fname"><br><br>
+      </form>
+    </div>
+
+    <h2></h2>
+
+    <div class = "userInfo">
+      <form action="/action_page.php" class = "infoForm">
+        <label for="fname">First name<br></label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name<br></label>
+        <input type="text" id="lname" name="lname"><br><br>
+      </form>
+
+      <form>
+        <label for="lname">Credit Card Number<br></label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="lname">CCV<br></label>
+        <input type="text" id="lname" name="lname"><br><br>
+      </form>
+    </div>
+
+    <div class = "fortite">
+      <button>Donate Now</button>
+    </div>
+      </div>
+  </main>
+
+
+  <footer>
+    <div id="footerContent">
+      <h3 class="centered">Rochester Affordable Housing Inc.</h3>
+      <div id="followUsDiv">
+
+        <p>Follow Us:</p>
+        <a href="https://www.twitter.com" class="socialLogoLink"><img src="images/twitterLogo.png"
+            alt="Twitter Icon"></a>
+        <!-- <a href = "https://www.youtube.com" class = "socialLogoLink"><img src = "images/youtubeLogo.png" alt = "YouTube Icon"></a> -->
+        <!-- <a href = "https://www.instagram.com" class = "socialLogoLink"><img src = "images/instagramLogo.png" alt = "Instagram Icon"></a> -->
+        <a href="https://www.facebook.com" class="socialLogoLink"><img src="images/facebookLogo.png"
+            alt="Facebook Icon"></a>
+        <a href="https://www.linkedin.com" class="socialLogoLink"><img src="images/linkedInLogo.png"
+            alt="LinkedIn Icon"></a>
+        <a href="#" class="textLink">
+          <p id="newsletterText">Newsletter</p>
+        </a>
+
+      </div>
+      <div id="missionStatement">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div>
+
+      <div id="footerContactInfo">
+        <p class="footerContactInfoContent">565 Rounseville Road - Unit 10, Rochester, MA 02770</p>
+        <p class="footerContactInfoContent">555-555-5555</p>
+        <p id="footerContactInfoEmail">Rochester&#8203AffordableHousing&#8203Inc&#8203@gmail.com</p>
+      </div>
+
+      <div>
+        <p class="centered">Copyright © - 2023 - Old Colony Computer Science Department</p>
+      </div>
+
+    </div>
+  </footer>
+  <p id = "f"></p>
+  <script src="script.js"></script>
+</body>
+
+</html>

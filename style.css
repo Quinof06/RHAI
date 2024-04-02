@@ -1,0 +1,756 @@
+html {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+
+  /* font-family: 'Hedvig Letters Sans', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+
+  /* For the footer */
+  position: relative;
+  min-height: 100vh;
+}
+
+main {
+  /* For the footer */
+  padding-bottom: 30%;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  /* color: floralwhite; */
+  color: black;
+  font-weight: 500;
+  padding: 25px 50px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: #6bbd6b;
+  font-family: 'Montserrat', sans-serif;
+  white-space: nowrap;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: lightgreen;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  background-color: #6bbd6b;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: lightgreen;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropDownArrow {
+  padding-left: 5%;
+  width: 11px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #6bbd6b;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #f9f1f1;
+  border-bottom: 1px solid;
+  /* box-shadow: 0px 5px 5px #a6a6a6; */
+}
+
+
+.headerInfo {
+  display: flex;
+  width: 85%;
+  margin-left: 5%;
+  margin-right: 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#headerLogo {
+  height: 100px;
+  margin-right: 5%;
+}
+
+#titleDiv {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 2%;
+  width: 100%;
+  align-items: flex-start;
+  margin-left: 5%;
+}
+
+#titleDiv>p {
+  margin: 1%;
+  font-size: 18px;
+  border-bottom: 1px solid;
+  /* text-decoration: underline; */
+}
+
+#logoAndTitle {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.donateBox {
+  display: flex;
+  align-items: center;
+}
+
+.donateButton {
+  background-color: lightgreen;
+  border: 5px darkgreen solid;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-right: 5%;
+}
+
+.donateButton:hover {
+  background-color: #82d382;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  background-color: #6bbd6b;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.centered {
+  text-align: center;
+}
+
+.contactInfo>p {
+  margin: 5px 0;
+}
+
+.contactInfo {
+  margin-right: 3%;
+}
+
+#backgroundImage {
+  width: 100%;
+  height: 500px ;
+  border-bottom: 1px solid;
+}
+
+#downKaret {
+  position: absolute;
+  top: 33%;
+  left: 48.5%;
+  /* margin-left: 48.5%; */
+
+}
+
+#downKaretImage {
+  height: 30px;
+  width: 30px;
+
+  /* background-color: rgba(107, 189, 107, 0.95); */
+  background-color: #6bbd6b;
+
+  border-radius: 30px 30px;
+  padding: 5px;
+}
+
+#downKaretImage:hover {
+  /* background-color: rgba(128, 128, 128, 1); */
+  background-color: #39ac39;
+
+}
+
+#scrollDown {
+  position: relative;
+}
+
+#navigationContainer {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.lastNavigationBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f9f1f1;
+  /* border: 1px solid; */
+  width: 50%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.navigationBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f9f1f1;
+  /* border: 1px solid; */
+  border-bottom: 2px solid;
+  width: 50%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.navigationBoxInside {
+  border-right: 2px solid;
+  padding-left: 20%;
+  padding-right: 30%;
+
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+.navigationBoxText {
+  font-size: 19px;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.navigationBoxText>a {
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigationBoxImg {
+  width: 400px;
+}
+
+
+/* edit the images of staff on about us page */
+.staff_img {
+  width: 170px;
+  height: 170px;
+  margin: auto;
+}
+
+/* holds the images and has them spaced out evenly*/
+.staff_container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 450px;
+  background-color: #f9f1f1;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-bottom: 5%;
+
+}
+
+.staff_card {
+  width: 41%;
+  height: 40%;
+  background-color: #6bbd6b;
+  border: 1px solid black;
+  display:flex;
+  align-items: center;
+}
+
+.staff_text{
+  text-align: center;
+}
+
+.standAloneText {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  text-indent: 40px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+
+  font-size: 15px;
+  background-color: #f9f1f1;
+  border-top: 1px solid black;
+  ;
+}
+
+#footerContent {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#followUsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 50%;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #545454;
+}
+
+#missionStatement {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 10px;
+
+  text-align: justify;
+}
+
+.textLink {
+  font-size: 17px;
+  text-decoration: underline;
+}
+
+.textLink:hover {
+  color: #707070;
+}
+
+.socialLogoLink {
+  padding: 1%;
+  border-radius: 5px;
+}
+
+.socialLogoLink:hover {
+  background-color: lightgrey;
+}
+
+#footerContactInfo {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #545454;
+  padding-bottom: 1%;
+  margin-bottom: 2.5%;
+
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.footerContactInfoContent {
+  margin-top: 0.8%;
+  border-right: 1px solid #545454;
+
+  padding-right: 1.8%;
+  margin-right: 1.8%;
+}
+
+#footerContactInfoEmail {
+  margin-top: 0.8%;
+}
+
+.centeredOnImage {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  text-align: center;
+  color: white;
+  background-color: rgba(120, 120, 120, 0.5);
+  font-size: 2vw;
+}
+
+#eventsDiv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f9f1f1;
+  padding: 25px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1%;
+  border: 1px solid black;
+}
+
+.event {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #d9d3d3;
+}
+
+.littleMoreSpacing {
+  margin-top: 3%;
+}
+
+.event>p {
+  width: 30%;
+  margin-right: 3.5%;
+  text-indent: 40px;
+}
+
+.event>ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.event>img {
+  width: 280px;
+  height: 200px;
+}
+
+.line {
+  border: .5px solid black;
+  width: 100%;
+}
+
+.donateAmounts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.donateAmounts>div {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  width: 425px;
+}
+
+.donateAmounts>div>div {
+  width: 150px;
+  background-color: lightgray;
+  margin-top: 15px;
+  padding: 5px 10px;
+  border: 1px solid black;
+}
+
+.userInfo {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fortite {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15%;
+}
+
+.donateMain {
+  text-align: center;
+}
+
+.donateAmounts>div>div:has(> a:hover) {
+  background-color: lightgreen;
+}
+
+form {
+  margin-top: 25px;
+}
+
+/* MEDIA QUEERIES */
+@media screen and (max-width: 1100px) {
+  main {
+    padding-bottom: 39%;
+  }
+
+  #downKaret {
+    top: 21%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    padding-bottom: 44%;
+  }
+
+  #followUsDiv>* {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contactInfo {
+    display: none;
+  }
+
+  .headerInfo {
+    margin-left: 10%;
+  }
+
+  #footerContactInfo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footerContactInfoContent {
+    border: none;
+  }
+
+  main {
+    padding-bottom: 53%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  main {
+    padding-bottom: 56%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    padding-bottom: 59%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main {
+    padding-bottom: 67%;
+  }
+
+  #downKaret {
+    top: 19%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .headerInfo {
+    justify-content: space-evenly;
+  }
+
+  .donateButton {
+    margin-left: 75%;
+  }
+
+  main {
+    padding-bottom: 76%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  main {
+    padding-bottom: 84%;
+  }
+
+  #downKaret {
+    top: 17%;
+  }
+}
+
+@media screen and (max-width: 608px) {
+  main {
+    padding-bottom: 87%;
+  }
+
+  #downKaret {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    padding-bottom: 93%;
+  }
+
+  .centeredOnImage {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main {
+    padding-bottom: 105%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  main {
+    padding-bottom: 110%;
+  }
+
+  #followUsDiv>* {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .donateButton {
+    margin-left: 50%;
+  }
+
+  main {
+    padding-bottom: 115%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .donateButton {
+    margin-left: 50%;
+  }
+
+  main {
+    padding-bottom: 120%;
+  }
+
+  #onImageSubtitle {
+    display: none;
+  }
+
+  .centeredOnImage {
+    top: 15%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .centeredOnImage {
+    top: 18.5%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .centeredOnImage {
+    top: 17%;
+  }
+}
+
+.fff {
+  background-color: #f9f1f1;
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px;
+  margin-top: 3%;
+  border: 1px solid black;
+}
+
+.title {
+  text-align: center;
+  margin-top:3%;
+}
+
+.mainContent{
+  width: 50%;
+  border: 2px solid black;
+  margin: 0 auto 0 auto;
+  text-align:center;
+  background-color: white;
+}
+
+.box1 {
+  margin: 3% 0% 5% 1%; /* top, right, bottom, left */
+  display: inline-block;
+  width: 48%;
+  border: 2px solid black;
+  padding-bottom: 2%;
+  text-align: center;
+  background-color: white;
+}
+
+.pContainer{
+  width: 90%;
+  margin: 0 auto;
+  
+}
+
+.paragraphHeader{
+  text-align: center;
+}
+.floorplan
+{
+  display: block;
+  margin: auto;
+  height: 40%;
+  width: 30%;
+}
+
+.eventImg{
+  padding:20px;
+}
+
+.mainButton{
+  border: 2px solid black;
+  background-color: lightgreen;
+  padding:10px;
+  text-decoration: none;
+}
+
+.paragraph{
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.grayBackground{
+  border-bottom: 1px solid;
+  background-color: #f9f1f1;
+  padding-top: 4%;
+}
+
+#lpl{
+  background-color:#f9f1f1;
+}
+
+.aboutUsHeader{
+  text-align: center;
+}
